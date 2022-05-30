@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tela_de_login", "tela_de_login.csproj", "{443DED79-4E80-48F6-A820-407F141B4BAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{443DED79-4E80-48F6-A820-407F141B4BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443DED79-4E80-48F6-A820-407F141B4BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443DED79-4E80-48F6-A820-407F141B4BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443DED79-4E80-48F6-A820-407F141B4BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8166BD8-F6F0-4ECF-871B-F1ABAB87C774}
+	EndGlobalSection
+EndGlobal
