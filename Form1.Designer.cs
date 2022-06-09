@@ -1,7 +1,7 @@
 ﻿
 namespace tela_de_login
 {
-    partial class Form1
+    partial class tela_de_login
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -35,10 +35,11 @@ namespace tela_de_login
             this.btn_pesquisar = new System.Windows.Forms.Button();
             this.btn_cadastrar = new System.Windows.Forms.Button();
             this.btn_alterar = new System.Windows.Forms.Button();
-            this.btn_excluir = new System.Windows.Forms.Button();
             this.textBox_id = new System.Windows.Forms.TextBox();
             this.textBox_func = new System.Windows.Forms.TextBox();
             this.textBox_cpf = new System.Windows.Forms.MaskedTextBox();
+            this.btn_deletar = new System.Windows.Forms.Button();
+            this.btn_limpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_id
@@ -76,10 +77,11 @@ namespace tela_de_login
             this.btn_pesquisar.TabIndex = 3;
             this.btn_pesquisar.Text = "Pesquisar";
             this.btn_pesquisar.UseVisualStyleBackColor = true;
+            this.btn_pesquisar.Click += new System.EventHandler(this.btn_pesquisar_Click);
             // 
             // btn_cadastrar
             // 
-            this.btn_cadastrar.Location = new System.Drawing.Point(524, 134);
+            this.btn_cadastrar.Location = new System.Drawing.Point(524, 118);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(75, 23);
             this.btn_cadastrar.TabIndex = 4;
@@ -89,21 +91,12 @@ namespace tela_de_login
             // 
             // btn_alterar
             // 
-            this.btn_alterar.Location = new System.Drawing.Point(524, 198);
+            this.btn_alterar.Location = new System.Drawing.Point(524, 162);
             this.btn_alterar.Name = "btn_alterar";
             this.btn_alterar.Size = new System.Drawing.Size(75, 23);
             this.btn_alterar.TabIndex = 5;
             this.btn_alterar.Text = "Alterar";
             this.btn_alterar.UseVisualStyleBackColor = true;
-            // 
-            // btn_excluir
-            // 
-            this.btn_excluir.Location = new System.Drawing.Point(524, 254);
-            this.btn_excluir.Name = "btn_excluir";
-            this.btn_excluir.Size = new System.Drawing.Size(75, 23);
-            this.btn_excluir.TabIndex = 6;
-            this.btn_excluir.Text = "Excluir";
-            this.btn_excluir.UseVisualStyleBackColor = true;
             // 
             // textBox_id
             // 
@@ -124,26 +117,49 @@ namespace tela_de_login
             this.textBox_cpf.Location = new System.Drawing.Point(290, 231);
             this.textBox_cpf.Mask = "000.000.000-00";
             this.textBox_cpf.Name = "textBox_cpf";
-            this.textBox_cpf.Size = new System.Drawing.Size(98, 20);
+            this.textBox_cpf.Size = new System.Drawing.Size(106, 20);
             this.textBox_cpf.TabIndex = 9;
+            this.textBox_cpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
-            // Form1
+            // btn_deletar
+            // 
+            this.btn_deletar.Location = new System.Drawing.Point(524, 204);
+            this.btn_deletar.Name = "btn_deletar";
+            this.btn_deletar.Size = new System.Drawing.Size(75, 23);
+            this.btn_deletar.TabIndex = 10;
+            this.btn_deletar.Text = "Excluir";
+            this.btn_deletar.UseVisualStyleBackColor = true;
+            this.btn_deletar.Click += new System.EventHandler(this.btn_deletar_Click);
+            // 
+            // btn_limpar
+            // 
+            this.btn_limpar.Location = new System.Drawing.Point(524, 245);
+            this.btn_limpar.Name = "btn_limpar";
+            this.btn_limpar.Size = new System.Drawing.Size(75, 23);
+            this.btn_limpar.TabIndex = 11;
+            this.btn_limpar.Text = "Limpar";
+            this.btn_limpar.UseVisualStyleBackColor = true;
+            this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
+            // 
+            // tela_de_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_limpar);
+            this.Controls.Add(this.btn_deletar);
             this.Controls.Add(this.textBox_cpf);
             this.Controls.Add(this.textBox_func);
             this.Controls.Add(this.textBox_id);
-            this.Controls.Add(this.btn_excluir);
             this.Controls.Add(this.btn_alterar);
             this.Controls.Add(this.btn_cadastrar);
             this.Controls.Add(this.btn_pesquisar);
             this.Controls.Add(this.label_cpf);
             this.Controls.Add(this.label_funcionario);
             this.Controls.Add(this.label_id);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "tela_de_login";
+            this.Text = "tela_de_login";
+            this.Load += new System.EventHandler(this.tela_de_login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,10 +173,12 @@ namespace tela_de_login
         private System.Windows.Forms.Button btn_pesquisar;
         private System.Windows.Forms.Button btn_cadastrar;
         private System.Windows.Forms.Button btn_alterar;
-        private System.Windows.Forms.Button btn_excluir;
+   
         private System.Windows.Forms.TextBox textBox_id;
         private System.Windows.Forms.TextBox textBox_func;
         private System.Windows.Forms.MaskedTextBox textBox_cpf;
+        private System.Windows.Forms.Button btn_deletar;
+        private System.Windows.Forms.Button btn_limpar;
     }
 }
 
